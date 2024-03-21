@@ -1,0 +1,584 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MyVLM</title>
+		<link rel="icon" href="assets/images/personalization_icon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul style="text-align: left;">
+							<li><a href="#intro">MyVLM</a></li>
+							<li><a href="#one">Overview</a></li>
+							<li><a href="#two">How Does It Work?</a></li>
+							<li><a href="#three">Results</a></li>
+							<li><a href="#acknowledgements">Acknowledgements</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>MyVLM</h1>
+							<h2>Personalizing VLMs for User-Specific Queries</h2>
+							<a target="_blank" rel="noopener noreferrer" href="https://yuval-alaluf.github.io/"><div class="author" style="display: inline-block;";>Yuval Alaluf</div><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+							<a target="_blank" rel="noopener noreferrer" href="https://eladrich.github.io/"><div class="author" style="display: inline">Elad Richardson</div><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+							<a target="_blank" rel="noopener noreferrer" href="http://www.stulyakov.com/"><div class="author" style="display: inline">Sergey Tulyakov</div><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+ 							<a target="_blank" rel="noopener noreferrer" href="https://kfiraberman.github.io/"><div class="author" style="display: inline">Kfir Aberman</div><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+							<a target="_blank" rel="noopener noreferrer" href="https://danielcohenor.com/"><div class="author" style="display: inline">Daniel Cohen-Or</div><sup>1,2</sup></a>
+							<br><br>
+							<div style="display: inline"><sup>1</sup>Snap Inc.&nbsp;&nbsp;&nbsp;&nbsp;</div>
+							<div style="display: inline"><sup>2</sup>Tel Aviv University&nbsp;&nbsp;&nbsp;</div>
+							<br><br>
+							<ul class="actions">
+								<li><a href="" class="button scrolly">Read Paper</a></li>
+								<li><a href="" class="button scrolly">Code & Data (Coming Soon)</a></li>
+							</ul>
+
+					</section>
+
+				<!-- One -->
+				<section id="one" class="wrapper style2 spotlights">
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Overview Video</h2>
+								<div class="w-embed-youtubevideo stega_movie youtube" id="w-node-e5e45b1d55ac-81500a5f" style="padding-top:56.17021276595745%">
+									<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameBorder="0"
+											src="https://www.youtube.com/embed/_sbXmLY2jMw?rel=1&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+											style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"></iframe>
+								</div>
+							</div>
+						</div>
+						<div class="image image-overlay-container">
+							<a class="image"><img src="assets/images/IMG-20240131-WA0133.jpg" alt="" data-position="60% 60%"/></a>
+							<div class="overlay">
+								<div class="text" style="margin: 2%;">"<span style="color:rgb(253, 216, 31)">&lt;your-dog&gt;</span> and a black dog running on the grass."</div>
+							</div>
+						</div>						  
+					</section>
+
+					<section>
+						<div class="content" style="width: 100%; background-color: #FFF176; text-decoration: none !important; display: block;">
+							<h2>Introducing MyVLM</h2>
+							<a class="image-overlay-container">
+								<img style="display: block; line-height: 0; text-decoration: none !important;" src="assets/images/website_teaser.png"/>
+							</a>
+							<p style="text-align: center; text-decoration: none; display: block;">
+								Given a set of images depicting user-specific concepts such as <span style="color:rgb(35, 134, 255)">&lt;you&gt;</span>, <span style="color:rgb(47, 135, 0)">&lt;your-dog&gt;</span>, and <span style="color:rgb(255, 152, 35)">&lt;your-friend&gt;</span> (left), we teach a pretrained vision-language model (VLM) to understand and reason over these concepts. 
+								First, we enable the model to generate personalized captions incorporating the concept into its output text (middle). We further allow the user to ask subject-specific questions about these concepts, 
+								querying the model with questions such as "What are <span style="color:rgb(35, 134, 255)">&lt;you&gt;</span> doing?" or "What is my <span style="color:rgb(255, 152, 35)">&lt;your-friend&gt;</span> wearing?" (right).
+							</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="image image-overlay-container">
+							<a class="image"><img src="assets/images/image_1.jpg" alt="" data-position="50% 60%" /></a>
+							<div class="overlay">
+								<div class="text" style="margin: 2%;">"<span style="color:rgb(253, 216, 31)">&lt;you&gt;</span>, wearing sunglasses and a yellow strap, standing on a bustling street in a colorful city."</div>
+							</div>
+						</div>	
+						<div class="content">
+							<div class="inner fade-up">
+								<h2>The Vision Language Models</h2>
+								<p style="color: #d4d4d4;">We apply MyVLM to various VLM architectures for personalizing captioning, visual question-answering, and referring expression comprehension.</p>
+								<div class="fade-up" style="text-align: center; width: 100%;">
+									<div style="display: inline-block; width: 30%;">
+										<a><img style="display: block; width: 100%; text-decoration: none;" src="assets/images/blip-icon.png" alt="" data-position="center center"/></a>
+										<p style="font-size: 20px; color: #d4d4d4; margin-top: 5%; margin-bottom: 5%;">BLIP-2</p>
+									</div>
+									<div style="display: inline-block; width: 30%;">
+										<a><img style="display: block; width: 100%; text-decoration: none;" src="assets/images/volcano_icon.png" alt="" data-position="center center" /></a>
+										<p style="font-size: 20px; color: #d4d4d4; margin-top: 5%; margin-bottom: 5%;">LLaVA 1.6</p>
+									</div>
+									<div style="display: inline-block; width: 30%;">
+										<a><img style="display: block; width: 100%; text-decoration: none;" src="assets/images/robot_head_icon.png" alt="" data-position="center center" /></a>
+										<p style="font-size: 20px; color: #d4d4d4; margin-top: 5%; margin-bottom: 5%;">MiniGPT-v2</p>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>How Does It Work?</h2>
+							
+							<a class="image-overlay-container" style="width: 100%; text-decoration: none; line-height: 0;"><img style="display: block; line-height: 0;" src="assets/images/method.png" alt="" data-position="center center" /></a>
+							
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>The VLM</h3>
+									<p style="margin-bottom: -5%;">We use a pretrained, frozen vision-language model to maintain the general capabilities of the model.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-eye"></span>
+									<h3>Step 1: Feature Extraction</h3>
+									<p style="margin-bottom: -5%;">Given an image, we extract the frozen image features from the VLM's vision encoder.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-check"></span>
+									<h3>Step 2: <i><b><u>Recognizing</u></b></i> the Concept</h3>
+									<p style="margin-bottom: -5%;">We utilize a set of <i><b>concept heads</b></i>, each designed to <i><b>recognize</b></i> the presence of a user-specific concept within the image.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-bullhorn"></span>
+									<h3>Step 3: <i><b><u>Communicating</u></b></i> the Concept </h3>
+									<p style="margin-bottom: -5%;">We train a <i><b>concept embedding</b></i> to represent the concept and guide the LLM to incorporate the concept into its personalized response.</p>
+								</section>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h1>Results</h1>
+							<ul style="list-style-type: none;">
+								<li><i class="far fa-user"></i>&nbsp;&nbsp;&nbsp;For each row, we show sample images of the target concept to the left</li>
+								<li><i class="fas fa-robot"></i>&nbsp;&nbsp;Images to the right represent the input images passed to MyVLM</li>
+								<li><i class="far fa-comment"></i>&nbsp;&nbsp;&nbsp;Personalized responses generated by MyVLM can be seen by hovering each image</li>
+								<li><i class="far fa-star"></i>&nbsp;&nbsp;<span>S<sub>*</sub></span> represents our concept's name</li>
+							</ul>
+							<h2>Personalized Captioning</h2>
+							<p><i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;Hover over the images to see the personalized captions!</p>
+							<div class="style1 fade-up">
+								<section>
+									<div class="image-grid fade-up">
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/1_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/1_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span>, dressed in a blue jacket and a green sweater, takes a selfie with his friends, who are also bundled up against the chilly weather..."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/1_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span>, in a blue suit, poses for a portrait at a scenic spot overlooking a river with a bridge in the distance"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/1_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"As <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> takes a break from his day, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> takes a moment to capture the moment"</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/2_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/2_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span>, laughing and enjoying her drink, is wearing a white t-shirt with the word ”Angels” and the year ”1961” on it. She’s also wearing sunglasses and has a straw in her drink"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/2_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> enjoying a warm beverage at a cafe, surrounded by the hustle and bustle of city life"</div>											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/2_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and her friends are enjoying a sunny day outdoors. They are dressed in summer attire, with <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> wearing a white top and sunglasses."</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/3_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/3_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and a friend at a restaurant, holding up their glasses of orange wine"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/3_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"Sitting at a table, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and her friend smile at each other as they clink their wine glasses together"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/3_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"In her living room, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and two friends are dressed in party hats and mustaches."</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/4_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/4_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> stands on a dock, smiling, with boats in the background, wearing a white t-shirt and sunglasses, overlooking a lake, with mountains in the distance."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/4_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"In the forest, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and his friend take a selfie, surrounded by the lush greenery. They are both smiling and wearing sunglasses"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/4_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is sitting in the car, wearing sunglasses and a green shirt, giving a thumbs up."</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/5_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/5_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> walking on a leash in a park near the beach with palm trees in the background."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/5_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and another dog are lying down in a dog bed in the floor"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/5_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"A sad <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> wearing a cone collar, sitting on a white tile floor"</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/6_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/6_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> standing in front of a rainbow flag and a potted plant with a white wall in the background."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/6_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> standing next to a pink box with the words "Pink series" on it. The cat is striped with multiple colors and has a long, colorful tail."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/6_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> standing next to a whiteboard with mathematical equations written on it."</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/7_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/7_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sits comfortably on the second shelf of an open refrigerator, ready to be stocked with a variety of food and drink items"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/7_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"A <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting on a window sill with a bunch of cactus and a windmill in the background."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/7_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> standing on a white shelf next to two mugs and a glass."</div>
+											</div>
+										</div>		
+
+										<div class="image image-grid-overlay-container-input">
+											<a class="image">
+												<img src="assets/images/captioning/8_input.jpg" alt="" data-position="center center" />
+											</a>
+										</div>
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/8_1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting next to a colorful children's book on a table."</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/8_2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting in front of a laptop on a wooden table with a question about how to write papers fast and efficiently?"</div>
+											</div>
+										</div>		
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/captioning/8_3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+											<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting on a bookshelf filled with books and yarn."</div>
+											</div>
+										</div>		
+
+									</div>
+								</section>
+							</div>
+						</div>
+					</section>
+					<section class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Personalized Visual Question-Answering</h2>
+							<div class="style1 fade-up">
+								<section>
+									<div class="image-grid fade-up">
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/1.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">Can you describe what <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing a brown sweater and has curly hair."
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">From left to right, where is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> positioned in the image?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "In the image, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is positioned on the right side of the table"
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/2.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">Can you describe what <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "In the image, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing a white sleeveless top"
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">On what side of the image is S*?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is on the right side of the image"
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/3.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">Can you describe what <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing a white tank top and black shorts."
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">On what side of the image is S*?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is on the right side of the image"
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/4.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">From left to right, where is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> positioned in the image?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is standing on the right side of the photo."
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">What color pants is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> wearing?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing red pants."
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/5.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">What is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> wearing?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is wearing a denim jacket and a necklace"
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">Where is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> in the image?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "In the image, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is sitting at a table with the other two people, likely enjoying a meal or a drink together."
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/6.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">Is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> small or large relative to the other objects?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is small relative to the other objects in the image."
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">Where is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> positioned in image?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "In the image, <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is positioned on top of the refrigerator, sitting on a shelf with various food items and containers."
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/7.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">What is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting in?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is sitting in a green bowl."
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">From left to right, where is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> located?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is located on the right side of the image, sitting in a green bowl next to a wooden bowl containing oranges and pears."
+											</div>
+										</div>
+
+										<div class="image image-grid-overlay-container-vqa-image">
+											<a class="image"><img src="assets/images/vqa/8.jpg" alt="" data-position="center center" /></a>
+										</div>	
+										<div class="image image-grid-overlay-container-vqa-text">
+											<div class="text-grid-question">
+												<i class="far fa-user"></i>: <u style="color: #FFF176">On what shelf is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is sitting on the top shelf of the pantry."
+												<br><br>
+												<i class="far fa-user"></i>: <u style="color: #FFF176">What color is <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span>?</u>
+												<br>
+												<i class="fas fa-robot"></i>: "The color <span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> is white."
+											</div>
+										</div>
+
+									</div>
+								</section>
+							</div>
+						</div>
+					</section>
+					<section class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Personalized Referring Expression Comprehension</h2>
+							<!-- <ul style="list-style-type: none;"> -->
+							<p><i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;Hover over the images to see the personalized captions!</p>
+							<!-- </ul> -->
+							<div class="style1">
+								<section>
+									<div class="image-grid fade-up">
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/rec/1.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> sitting on a book shelf next to a stack of books."</div>
+											</div>
+										</div>	
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/rec/2.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> next to a cup of coffee that says coffee on it."</div>
+											</div>
+										</div>	
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/rec/3.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and a black dog walking towards each other in a garden."</div>
+											</div>
+										</div>	
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/rec/5.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and his friend are standing on the balcony of their apartment in New York City. Everybody is smiling and enjoying the view."</div>
+											</div>
+										</div>	
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/rec/4.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and her friend sitting outside at a table with drinks."</div>
+											</div>
+										</div>	
+										<div class="image image-grid-overlay-container">
+											<a class="image"><img src="assets/images/rec/8.jpg" alt="" data-position="center center" /></a>
+											<div class="overlay-grid">
+												<div class="text-grid">"<span style="color:rgb(253, 216, 31)">S<sub>*</sub></span> and her dog, with another dog and its owner nearby."</div>
+											</div>
+										</div>	
+									</div>
+								</section>
+							</div>
+						</div>
+					</section>
+
+					<section id="acknowledgements" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Acknowledgements</h2>
+							<p style="color: rgb(220, 220, 220);">
+								This research was performed while Yuval Alaluf was at Snap.
+							</p>
+							<p style="color: rgb(220, 220, 220);">
+								We would like to thank Assaf Ben-Kish, Or Patashnik, Moran Yanuka, Morris Alper, Yonatan Biton, and Yuwei Fang for their fruitful discussions and valuable input which helped improve this work.
+							</p>
+							<h2>BibTeX</h2>
+							<pre><code style="background-color: #fff7ab;">@article{}
+							</code></pre>
+						</div>
+					</section>
+
+					<section id="credit" class="wrapper style fade-up" style="background-color: #ffd700; text-align: left;">
+						<div class="inner" style="padding: 0.5em 0em 0em 0em; height: 7.5vh; font-size: 14px;">
+							<p style="color: rgb(70, 70, 70); margin-left: 2%; margin-top: 1.5%">
+								Template created by Yuval Alaluf, based on <a href="https://html5up.net/hyperspace">HTML5up Hyperspace</a>. Feel free to reuse.
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
