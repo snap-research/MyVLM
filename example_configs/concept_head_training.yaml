@@ -1,0 +1,8 @@
+concept_name: my_concept
+output_dir: ./concept_head_training
+positive_samples_path: ./data/concepts/
+negative_samples_path: ./data/negatives/
+model_name: hf-hub:apple/DFN5B-CLIP-ViT-H-14-384
+n_positive_samples: 4
+max_steps: 500
+seed: 42

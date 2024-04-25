@@ -1,0 +1,3 @@
+images_root: /path/to/images/to/infer
+vlm_type: LLAVA        # Can also be BLIP2 or MINIGPT_V2
+torch_dtype: bfloat16

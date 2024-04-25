@@ -1,0 +1,9 @@
+concept_name:  concept_name
+concept_identifier: identifier          # This is the identifier used for training the concept embedding
+concept_type: OBJECT                    # Can also be PERSON
+vlm_type: BLIP2                         # Can also be LLAVA or MINIGPT_V2
+personalization_task: CAPTIONING        # Can also be VQA or REC depending on the VLM type
+image_paths: /path/to/images/to/infer
+checkpoint_path: ./outputs
+concept_head_path: ./object_concept_heads    # Can be ignored if working with people
+seed: 42    # This should be the same seed used for the concept head (for objects) and embedding training

@@ -1,0 +1,18 @@
+concept_name: concept_name
+concept_identifier: sks            # For people, this should be a short name such as Bob or Anna
+concept_type: OBJECT               # Can also be PERSON
+vlm_type: MINIGPT_V2
+personalization_task: CAPTIONING   # For MiniGPT-v2, we can do both CAPTIONING and REC
+output_root: ./outputs
+data_root: ./data
+concept_head_path: ./object_concept_heads   # Can be ignored if working with people
+threshold: 0.5                              # For people, this should be 0.675
+optimization_steps: 200
+learning_rate: 1.0
+batch_size: 4
+reg_lambda: 1.0
+save_interval: 25
+val_interval: 25
+seed: 42           # If concept is an object, this should be the same seed that was used for training the concept heads
+device: cuda
+torch_dtype: bfloat16

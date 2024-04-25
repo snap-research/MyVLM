@@ -1,0 +1,125 @@
+Copyright (c) 2024 Snap Inc. All rights reserved.
+
+This sample code is made available by Snap Inc. for non-commercial, academic purposes only.
+
+Non-commercial means not primarily intended for or directed towards commercial advantage or monetary compensation. Academic purposes mean solely for study, instruction, or non-commercial research, testing, or validation.
+
+No commercial license, whether implied or otherwise, is granted in or to this code, unless you have entered into a separate agreement with Snap Inc. for such rights.
+
+This sample code is provided as-is, without warranty of any kind, express or implied, including any warranties of merchantability, title, fitness for a particular purpose, non-infringement, or that the code is free of defects, errors or viruses. In no event will Snap Inc. be liable for any damages or losses of any kind arising from this sample code or your use thereof.
+
+Any redistribution of this sample code, including in binary form, must retain or reproduce the above copyright notice, conditions, and disclaimer.
+
+The following sets forth attribution notices for third-party software that may be included in portions of this sample code:
+
+--------------------------- License for LLaVA --------------------------------
+
+Apache 2.0
+
+© 2023 LLaVa Authors and Contributors
+https://github.com/haotian-liu/LLaVA/
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+BibTeX:
+
+@misc{liu2024llavanext,
+    title={LLaVA-NeXT: Improved reasoning, OCR, and world knowledge},
+    url={https://llava-vl.github.io/blog/2024-01-30-llava-next/},
+    author={Liu, Haotian and Li, Chunyuan and Li, Yuheng and Li, Bo and Zhang, Yuanhan and Shen, Sheng and Lee, Yong Jae},
+    month={January},
+    year={2024}
+}
+
+@misc{liu2023improvedllava,
+      title={Improved Baselines with Visual Instruction Tuning},
+      author={Liu, Haotian and Li, Chunyuan and Li, Yuheng and Lee, Yong Jae},
+      publisher={arXiv:2310.03744},
+      year={2023},
+}
+
+@misc{liu2023llava,
+      title={Visual Instruction Tuning},
+      author={Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+      publisher={NeurIPS},
+      year={2023},
+}
+
+
+--------------------------- License for Vicuna --------------------------------
+
+Apache 2.0
+
+© 2023 Vicuna Contributors
+https://github.com/lm-sys/FastChat
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+BibTeX:
+
+@misc{zheng2023judging,
+      title={Judging LLM-as-a-judge with MT-Bench and Chatbot Arena},
+      author={Lianmin Zheng and Wei-Lin Chiang and Ying Sheng and Siyuan Zhuang and Zhanghao Wu and Yonghao Zhuang and Zi Lin and Zhuohan Li and Dacheng Li and Eric. P Xing and Hao Zhang and Joseph E. Gonzalez and Ion Stoica},
+      year={2023},
+      eprint={2306.05685},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+--------------------------- License for BLIP-2  --------------------------------
+
+BSD 3-Clause
+
+© 2024 Junnan Li, Dongxu Li, Silvio Savarese, Steven Hoi.
+https://huggingface.co/docs/transformers/model_doc/blip-2
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+--------------------------- License for MiniGPT-v2  --------------------------------
+
+BSD 3-Clause
+
+Copyright 2023 Deyao Zhu. All rights reserved.
+https://minigpt-v2.github.io/
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+--------------------------- License for Llama 2  --------------------------------
+
+© 2024 Meta Platforms, Inc. All Rights Reserved.
+
+Llama 2 is licensed under the LLAMA 2 Community License:
+https://ai.meta.com/llama/license/
+
+--------------------------- License for RetinaFace and ArcFace --------------------------------
+
+© 2023 insightface Contributors
+https://github.com/deepinsight/insightface
+
+Contributor Covenant Code of Conduct:
+https://github.com/deepinsight/insightface?tab=coc-ov-file#readme
+
