@@ -50,10 +50,10 @@ conda activate myvlm
 # Dataset & Pretrained Concept Heads
 As part of our code release, we have also released our object dataset introduced in the paper. This contains 29 user-specific objects, each containing ~10 images and 5 corresponding personalized captions for each image. 
 
-The full dataset can be downloaded from [here](https://drive.google.com/drive/folders/1dxjwYVAmBRWLeqUjWsR8cWdqMvfsqW79?usp=sharing). 
+The full dataset can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1dxjwYVAmBRWLeqUjWsR8cWdqMvfsqW79?usp=sharing) or [HuggingFace](https://huggingface.co/datasets/yuvalalaluf/MyVLM).
 Please note that our dataset is available under a non-commercial license (see `LICENSE` for details.)
 
-A pretrained concept head and concept embedding for each object can also be downloaded from [here](https://drive.google.com/drive/folders/1qnBWDv1l9JFEG_7HGPtfnZyhBerRknP9?usp=sharing), also under the same license. 
+A pretrained concept head and concept embedding for each object can also be downloaded from [Google Drive](https://drive.google.com/drive/folders/1qnBWDv1l9JFEG_7HGPtfnZyhBerRknP9?usp=sharing) or [HuggingFace](https://huggingface.co/yuvalalaluf/MyVLM), also under the same license.  
 These can be loaded using the `CLIPConceptHead` class and our inference scripts for reproducing the paper results.
 
 
